@@ -1,24 +1,12 @@
 package me.dio.challenge.model;
 
-public class Course {
-    private String title;
-    private String description;
+public class Course extends Content{
+
     private int workload;
 
-    public String getTitle() {
-        return title;
-    }
-
-    public void setTitle(String title) {
-        this.title = title;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
+    @Override
+    public double calculateXp() {
+        return 0;
     }
 
     public int getWorkload() {
